@@ -6,18 +6,20 @@ interface QueryBuilderInterface{
 
     public function first();
 
-    public function where();
+    public function where($param, $param2, $param3);
 
-    public function find();
+    public function find($id);
 
-    public function orderBy($param);
+    public function orderBy($column, $param);
 
     public function count();
 
-    public function join();
+    public function join($reference_table, $foreign_key, $operator, $reference_key);
 
     public function select($item);
 
     public function get();
+
+    public function limit($param);
 
 }
