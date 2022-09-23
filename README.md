@@ -14,6 +14,14 @@ Cách sử dụng kết quả:
 - Chỉnh sửa thông tin connect PDO trong `src/Config/Config.php`
 - Chạy seeding: run 2 file `seeding_to_posts.php` và  `seeding_to_users.php` để khởi tạo dữ liệu.
 
+#### Cấu trúc thư mục
+- src
+  - Config: PDO kết nối CSDL
+  - interface: chứa các interface của dto
+  - QueryBuilder: Class Query Builder, query method.
+- test
+  - Các file test và khởi tạo dữ liệu
+
 #### Kết quả thu được
 - Quản lý user và database với Adminer.
 - Kết nối với databases sử dụng PDO.
