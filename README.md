@@ -7,7 +7,7 @@ Thực hiện bởi: ***Phạm Huy Hưng***
 
 #### Sử dụng
 Cách sử dụng kết quả:
-- Download code và run code tại đường dẫn https://github.com/phhung1901/simple_query_builder
+- Download code và run code tại đường dẫn [https://github.com/phhung1901/simple_query_builder](https://github.com/phhung1901/simple_query_builder)
 - Cài đặt `composer` và `PHP`
 - Cài đặt FakerPHP qua composer: ***composer require fakerphp/faker***
 - Tạo db với tên là: `db_query_builder`
@@ -27,4 +27,4 @@ Cách sử dụng kết quả:
 - Quản lý user và database với Adminer.
 - Kết nối với databases sử dụng PDO.
 - Sử dụng PDO để xây dựng 1 simple query builder theo đề bài. 
-- Kết hợp với dto của bài trước (`https://github.com/phhung1901/pdo`) để tạo thành 1 package hoàn chỉnh.
+- Kết hợp với dto của bài trước [https://github.com/phhung1901/pdo](https://github.com/phhung1901/pdo) để tạo thành 1 package hoàn chỉnh.
