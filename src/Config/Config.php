@@ -2,14 +2,19 @@
 namespace src\Config;
 
 class Config{
-    private static $servername = "localhost";
-    private static $dbname = "db_query_builder";
-    private static $username = "root";
-    private static $password = "Phh1901@";
+    private static $servername;
+    private static $dbname;
+    private static $username;
+    private static $password;
 
     private static $instance;
 
-    private function __construct(){}
+    public function __construct($servername, $dbname, $username, $password){
+        self::$servername = $servername;
+        self::$dbname = $dbname;
+        self::$username = $username;
+        self::$password = $password;
+    }
 
     public static function getInstance(){
         try {
