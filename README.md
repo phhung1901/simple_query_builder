@@ -26,4 +26,4 @@ Cách sử dụng kết quả:
 - Quản lý user và database với Adminer.
 - Kết nối với databases sử dụng PDO.
 - Sử dụng PDO để xây dựng 1 simple query builder theo đề bài. 
-- Kết hợp với dto của bài trước [](https://github.com/phhung1901/pdo) để tạo thành 1 package hoàn chỉnh.
+- Kết hợp với dto của bài trước [https://github.com/phhung1901/pdo](https://github.com/phhung1901/pdo) để tạo thành 1 package hoàn chỉnh.
