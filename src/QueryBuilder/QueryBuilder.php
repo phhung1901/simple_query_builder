@@ -2,12 +2,10 @@
 namespace src\QueryBulder;
 
 require_once "./src/Config/Config.php";
-require_once "./src/Interfaces/QueryBuilderInterface.php";
 
 use src\Config\Config;
-use src\interfaces\QueryBuilderInterface;
 
-class QueryBuilder implements QueryBuilderInterface {
+class QueryBuilder{
     private $query;
 
     private static $table;

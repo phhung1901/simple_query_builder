@@ -1,5 +1,5 @@
 <?php
-namespace src\Model;
+namespace test;
 
 require_once 'vendor/autoload.php';
 require_once "./src/Config/Config.php";
