@@ -2,23 +2,17 @@
 namespace src\Config;
 
 class Config{
-    private static $servername;
-    private static $dbname;
-    private static $username;
-    private static $password;
+    private static $config = array();
 
     private static $instance;
 
-    public function __construct($servername, $dbname, $username, $password){
-        self::$servername = $servername;
-        self::$dbname = $dbname;
-        self::$username = $username;
-        self::$password = $password;
+    public function __construct(array $config){
+        self::$config = $config;
     }
 
     public static function getInstance(){
         try {
-            self::$instance = new \PDO("mysql:host=".self::$servername.";dbname=".self::$dbname, self::$username, self::$password);
+            self::$instance = new \PDO("mysql:host=".self::$config['host'].";dbname=".self::$config['dbname'], self::$config['username'], self::$config['password']);
             self::$instance->query('SET NAMES utf8');
             self::$instance->query('SET CHARACTER SET utf8');
         }catch (\Exception $exception){
