@@ -1,9 +1,8 @@
 <?php
 namespace test;
 
-//require_once "./src/Config/Config.php";
-require_once "./src/QueryBuilder/QueryBuilder.php";
-require_once "User.php";
+require_once "./vendor/autoload.php";
+
 
 use src\Config\Config;
 use src\QueryBulder\QueryBuilder as DB;
