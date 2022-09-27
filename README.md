@@ -63,6 +63,32 @@ $result = DB::table('users')
 ?>
 ```
 
+- Use without DTO
+```php
+<?php
+$user = $user->from($result);
+print_r($user);
+?>
+```
+- Kết quả thu được: 
+`
+test\User Object
+(
+    [original:protected] => 
+    [casts:protected] => 
+    [attributes:protected] => 
+    [default_casts:protected] => 
+    [0] => stdClass Object
+        (
+            [id] => 1
+            [name] => Thái Trọng
+            [phone] => (0199)360-7961
+        )
+
+)
+
+`
+
 #### Cấu trúc thư mục
 - src
   - Config: PDO kết nối CSDL
