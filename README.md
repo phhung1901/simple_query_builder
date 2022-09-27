@@ -20,8 +20,9 @@ Thực hiện bởi: ***Phạm Huy Hưng***
 
 ***Nội dung:***
 - Khai báo CSDL và connect with PDO: 
-`php
-se src\Config\Config;
+```php
+<?php
+use src\Config\Config;
 use src\QueryBulder\QueryBuilder as DB;
 use test\User;
 
@@ -39,7 +40,8 @@ $config_val = [
 
 $config = new Config($config_val);
 $user = new \test\User();
-`
+?>
+```
 
 #### Cấu trúc thư mục
 - src
