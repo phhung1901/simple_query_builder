@@ -6,7 +6,7 @@
 Thực hiện bởi: ***Phạm Huy Hưng***
 
 #### Sử dụng
-Cách sử dụng kết quả:
+***Cách sử dụng kết quả trực tiếp:***
 - Download code và run code tại đường dẫn [https://github.com/phhung1901/simple_query_builder](https://github.com/phhung1901/simple_query_builder)
 - Cài đặt `composer` và `PHP`
 - Cài đặt FakerPHP qua composer: ***composer require fakerphp/faker***
@@ -14,6 +14,32 @@ Cách sử dụng kết quả:
 - Chỉnh sửa thông tin connect PDO trong `src/Config/Config.php`
 - Chạy seeding: run 2 file `seeding_to_posts.php` và  `seeding_to_users.php` để khởi tạo dữ liệu.\
 - Chạy: $composer dump-autoload
+
+***Required package:***
+- `composer require phhung1901/simple_query_builder:dev-main`
+
+***Nội dung:***
+- Khai báo CSDL và connect with PDO: 
+`php
+se src\Config\Config;
+use src\QueryBulder\QueryBuilder as DB;
+use test\User;
+
+$servername = "localhost";
+$dbname = "db_query_builder";
+$username = "root";
+$password = "Phh1901@";
+
+$config_val = [
+    'host' => $servername,
+    'dbname' => $dbname,
+    'username' => $username,
+    'password' => $password
+];
+
+$config = new Config($config_val);
+$user = new \test\User();
+`
 
 #### Cấu trúc thư mục
 - src
