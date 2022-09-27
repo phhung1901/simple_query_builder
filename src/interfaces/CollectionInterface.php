@@ -1,5 +1,5 @@
 <?php
-namespace interfaces;
+namespace src\interfaces;
 
 interface CollectionInterface extends Arrayable, ArrayAccess, IteratorAggregate, Countable {
     public function isEmpty();

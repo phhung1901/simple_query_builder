@@ -6,7 +6,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 
 use src\Config\Config;
-use src\QueryBulder\QueryBuilder as DB;
+use src\QueryBuilder\QueryBuilder as DB;
 use test\User;
 
 $servername = "localhost";

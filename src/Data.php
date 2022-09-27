@@ -1,17 +1,10 @@
 <?php
 namespace src;
 
-//require_once "./vendor/autoload.php";
-require_once "interface/HasAttributes.php";
-require_once "interface/Arrayable.php";
-require_once "interface/Jsonable.php";
 
-
-
-
-use interfaces\Arrayable;
-use interfaces\HasAttributes;
-use interfaces\Jsonable;
+use src\interfaces\Arrayable;
+use src\interfaces\HasAttributes;
+use src\interfaces\Jsonable;
 
 class Data implements Arrayable , Jsonable {
     use HasAttributes;

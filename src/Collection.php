@@ -1,7 +1,9 @@
 <?php
 namespace src;
 
-class Collection implements CollectionInterface{
+use src\interfaces\CollectionInterface;
+
+class Collection implements CollectionInterface {
 
     private $elements;
 
@@ -52,7 +54,7 @@ class Collection implements CollectionInterface{
         // TODO: Implement map() method.
     }
 
-    public function toArray()
+    public function toArray($array)
     {
         // TODO: Implement toArray() method.
         return $this->elements;
@@ -60,5 +62,30 @@ class Collection implements CollectionInterface{
 
     public function count(){
         return count($this->elements);
+    }
+
+    public function offsetUnset($offset)
+    {
+        // TODO: Implement offsetUnset() method.
+    }
+
+    public function offsetGet($offset)
+    {
+        // TODO: Implement offsetGet() method.
+    }
+
+    public function offsetExists($offset)
+    {
+        // TODO: Implement offsetExists() method.
+    }
+
+    public function offsetSet($offset, $value)
+    {
+        // TODO: Implement offsetSet() method.
+    }
+
+    public function getIterator()
+    {
+        // TODO: Implement getIterator() method.
     }
 }

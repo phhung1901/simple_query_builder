@@ -1,5 +1,5 @@
 <?php
-namespace interfaces;
+namespace src\interfaces;
 
 interface Countable{
     public function count();

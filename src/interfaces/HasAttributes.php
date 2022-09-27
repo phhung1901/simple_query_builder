@@ -1,5 +1,5 @@
 <?php
-namespace interfaces;
+namespace src\interfaces;
 
 trait HasAttributes{
     protected $original;

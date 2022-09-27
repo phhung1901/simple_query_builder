@@ -13,10 +13,9 @@
         }
     ],
     "autoload": {
-        "files": [
-            "./src/Config/Config.php",
-            "./src/QueryBuilder/QueryBuilder.php",
-            "./test/User.php"
-        ]
+        "psr-4": {
+            "src\\": "src/",
+            "test\\": "test/"
+        }
     }
 }

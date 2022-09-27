@@ -1,5 +1,5 @@
 <?php
-namespace interfaces;
+namespace src\interfaces;
 
 interface ArrayAccess{
     public function offsetUnset($offset);

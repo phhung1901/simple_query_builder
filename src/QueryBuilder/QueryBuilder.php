@@ -1,5 +1,5 @@
 <?php
-namespace src\QueryBulder;
+namespace src\QueryBuilder;
 
 require_once "./src/Config/Config.php";
 
