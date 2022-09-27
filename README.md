@@ -71,7 +71,7 @@ print_r($user);
 ?>
 ```
 - Kết quả thu được: 
-`
+```
 test\User Object
 (
     [original:protected] => 
@@ -87,7 +87,7 @@ test\User Object
 
 )
 
-`
+```
 
 #### Cấu trúc thư mục
 - src
