@@ -1,7 +1,6 @@
 <?php
 namespace src\QueryBuilder;
 
-require_once "./src/Config/Config.php";
 
 use src\Config\Config;
 
