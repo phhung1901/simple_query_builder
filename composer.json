@@ -1,7 +1,16 @@
 {
+    "name": "phhung1901/simple_query_builder",
+    "description": "Create Query Builder is a simple, methods-chaining dependency-free library to create SQL Queries simple. Supports databases which are supported by PDO",
     "require": {
+        "php": ">=7.4",
         "fakerphp/faker": "^1.20"
     },
+    "authors": [
+        {
+            "name": "Pham Hung",
+            "email": "phhung190101@gmail.com"
+        }
+    ],
     "autoload": {
         "files": [
             "./src/Config/Config.php",
